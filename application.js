@@ -61,7 +61,7 @@ app.delete('/api/notes/:id', function (req, res) {
   });
 });
 
-app.listen(3000, () => { console.log("listening"); });
+app.listen(PORT, () => { console.log("listening"); });
 
 
 
