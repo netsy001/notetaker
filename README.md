@@ -20,8 +20,10 @@ https://github.com/netsy001/notetaker
 
 https://drive.google.com/file/d/1opyfvsPgOFh93oIZj5DiYNQ05FkZrjKr/view
 
+https://notetaker-app-s.herokuapp.com/notes
+
 ## Screenshots - Demo
-<kbd>![screenshot-demo1](./img/img2.png)</kbd><kbd>![screenshot-demo2](./img/img1.gif)</kbd>
+<kbd>![screenshot-demo1](./img/img2.png)</kbd><kbd>![screenshot-demo2](./img/img1.gif)</kbd><kbd>![screenshot-demo3](./img/img3.png)</kbd>
 
 ## Project Objective
 To modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
