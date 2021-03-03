@@ -21,7 +21,6 @@ app.use(express.json());
 var notes;
 fs.readFile(`${__dirname}/db.json`, 'utf8', function (err, data) {
   if (err) throw err;
-  console.log(data);
   notes = JSON.parse(data);
 });
 //GET method is used to get the data. '/' initial route
@@ -40,11 +39,9 @@ app.get("/api/notes/", function (req, res) {
 app.post('/api/notes', function (req, res) {
   var newNote = req.body; //whatever we are requesting its being stored n newNote
   newNote.id = uuidv4(); // Adding ID to the newDAta using uuid method.
-  console.log(newNote);
   notes.push(newNote);
-  console.log(notes)
+  console.log(newNote);
   fs.writeFile("./db.json", JSON.stringify(notes), (err) => { //newNotes are being send to db.json file
-    console.log("err:", err)
     res.json(newNote);
   });
 });
@@ -60,7 +57,6 @@ app.delete('/api/notes/:id', function (req, res) {
     newId++;
   }
   fs.writeFile("./db.json", JSON.stringify(notes), (err) => {
-    console.log("err:", err)
     res.json(notes);
   });
 });
